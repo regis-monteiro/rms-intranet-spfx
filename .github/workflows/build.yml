@@ -1,1 +1,31 @@
+name: Build SPFx package
 
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '18.20.4'
+
+      - name: Instalar dependencias
+        run: npm install --no-audit --no-fund --legacy-peer-deps
+
+      - name: Compilar
+        run: |
+          npx gulp bundle --ship
+          npx gulp package-solution --ship
+
+      - name: Publicar o pacote
+        uses: actions/upload-artifact@v4
+        with:
+          name: rms-intranet-sppkg
+          path: sharepoint/solution/*.sppkg
+          if-no-files-found: error
