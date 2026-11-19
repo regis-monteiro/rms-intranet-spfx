@@ -1,0 +1,16 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "rms-intranet-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/rmsIntranet/RmsIntranetWebPart.js",
+          "manifest": "./src/webparts/rmsIntranet/RmsIntranetWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {}
+}
