@@ -1,0 +1,21 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "rms-intranet-client-side-solution",
+    "id": "a7c4e8f1-3b62-4d95-8e17-2f6a9c5d4b83",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": false,
+    "isDomainIsolated": false,
+    "developer": {
+      "name": "RMS Organização Contábil",
+      "websiteUrl": "https://rmscontabil.com.br",
+      "privacyUrl": "https://rmscontabil.com.br",
+      "termsOfUseUrl": "https://rmscontabil.com.br"
+    },
+    "features": []
+  },
+  "paths": {
+    "zippedPackage": "solution/rms-intranet.sppkg"
+  }
+}
