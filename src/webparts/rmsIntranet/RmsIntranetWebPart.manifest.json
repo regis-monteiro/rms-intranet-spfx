@@ -1,0 +1,24 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx/client-side-web-part-manifest.schema.json",
+  "id": "b8e2c7f4-9d13-4a68-8f52-1c9b3e7a6d04",
+  "alias": "RmsIntranetWebPart",
+  "componentType": "WebPart",
+  "version": "*",
+  "manifestVersion": 2,
+  "requiresCustomScript": false,
+  "supportedHosts": ["SharePointWebPart"],
+  "supportsThemeVariants": true,
+  "preconfiguredEntries": [
+    {
+      "groupId": "5c03119e-3074-46fd-976b-c601731d7fcc",
+      "group": { "default": "Outros" },
+      "title": { "default": "Intranet RMS" },
+      "description": { "default": "Intranet interna da RMS Organização Contábil" },
+      "officeFabricIconFontName": "Home",
+      "properties": {
+        "url": "https://regis-monteiro.github.io/",
+        "altura": 1200
+      }
+    }
+  ]
+}
